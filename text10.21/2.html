@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="" name="type" id="inp" value="" />
+		<button id="btn">登录</button>
+		<div id="mydiv"></div>
+		<script type="text/javascript">
+			var inp=document.getElementById('inp');
+			var btn=document.getElementById('btn');
+		    var mydiv=document.getElementById('mydiv');
+            btn.onclick=function(){
+					var num=inp.value;
+					inp.value=String;
+				if(num.length>8){
+					alert('存款不符');
+				}else{
+				    
+					var bh=num.padEnd(6,'0');
+					alert('存款为'+bh);
+					mydiv.innerHTML =bh;
+				}
+			}
+		</script>
+	</body>
+</html>
